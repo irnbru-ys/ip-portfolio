@@ -4,7 +4,7 @@
         grid-template-columns: 400px minmax(0, 70px) 570px minmax(0, 100px);
         grid-template-rows: minmax(245px, auto) minmax(255px, auto);
         grid-auto-rows: auto;
-        padding-top: 120px;
+        padding: 120px 0;
        }
       
 
@@ -33,7 +33,7 @@
     }
 
     .line {
-        @include line;
+        @include line--start;
         
     }
 

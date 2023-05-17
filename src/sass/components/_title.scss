@@ -16,11 +16,20 @@
         font-size: 14px;
         line-height: 21px;
     }
-    &__fz36 {
+    &--fz36 {
         font-size: 36px;
         line-height: 60px;
         margin: 0;
         padding: 0;
     }
-   
+    &--fz20 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+    }
+   &--fz12 {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+   }
 }

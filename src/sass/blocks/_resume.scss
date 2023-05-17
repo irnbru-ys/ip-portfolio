@@ -1,0 +1,116 @@
+.resume {
+    position: relative;
+    padding-left: 35px;
+    
+    &__item {
+        &-head {
+            position: relative;
+            padding-left: 56px;
+            padding-top: 45px;
+            
+        }
+        &-icon {
+            position: absolute;
+            left: 28px;
+            top: 59px;
+            width: 25px;
+            height: 25px;
+            transform: translateX(-50%);
+            @include before_circle; 
+                &::before {
+                    left: -65%;
+                    top: -50%;
+                }  
+               
+           }
+
+       
+    }
+    .item-head__subtitle  {
+        margin-bottom: 12px;
+    }
+    &__head-text {
+        max-width: 375px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+   
+    &__suptitle {
+        position: relative;
+        @include before_circle;
+        margin-bottom: 6px;
+        text-align: center;
+        &::before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__title {
+       text-align: center;
+    }
+
+    .line {
+        @include line--center;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+        padding: 0 65px;
+        
+    }
+
+    &__column {
+        
+        &-title {
+            position: relative;
+            
+            &::before {
+                content: "";
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background: $color-main;
+                border-radius: 100%;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -52px;
+                
+            }
+            
+            
+        }
+        ul {
+            list-style-type: none;
+            
+            li {
+                position: relative;
+                
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 1px;
+                    height: calc(100% + 8px);
+                    top: -8px;
+                    left: -45px;
+                    background-color: #000;
+                    z-index: -1;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 50px;
+                    height: 1px;
+                    top: 65px;
+                    left: -45px;
+                    background-color: #000;
+                }
+                
+
+                
+            }
+        }
+    }
+       
+}
