@@ -10,3 +10,11 @@ closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
 });
 
+        // skills-bar  
+
+// const counters = document.querySelectorAll('.skills__rating-counter'),
+//     lines -document.querySelectorAll('.skillss__ratings-line span');
+
+// counters.forEach((item, i) => {
+//     lines[i].style.width = item.innerHTML;
+// }) ;
